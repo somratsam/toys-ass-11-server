@@ -76,7 +76,7 @@ async function run() {
     // Retrieve all toys from both collections
     app.get('/allToys', async (req, res) => {
       const sortDirection = req.query.sort || 'asc'; // Default sorting direction is ascending
-      const sortField = 'price'; // Sort based on the 'price' field
+      const sortField = 'price'; 
       const sortOptions = {};
       sortOptions[sortField] = sortDirection === 'asc' ? 1 : -1;
 
