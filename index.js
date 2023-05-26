@@ -46,7 +46,7 @@ async function run() {
       res.send(result);
     });
 
-    
+    // Add a toy
     app.post('/addToy', async (req, res) => {
       const addToy = req.body;
       console.log(addToy);
