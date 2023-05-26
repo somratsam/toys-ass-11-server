@@ -104,7 +104,7 @@ async function run() {
       try {
         const cursor = toysCollection.find({
           name: { $regex: new RegExp(name, 'i') },
-        }).limit(20); // Adjust the limit as needed
+        }).limit(20);
         const result = await cursor.toArray();
         res.json(result);
       } catch (error) {
